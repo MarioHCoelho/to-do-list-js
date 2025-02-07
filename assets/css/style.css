@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --primaryBgcolor: rgb(40,40,40);
+    --secondaryBgcolor: rgb(20, 20, 20);
+    --gray0 : rgb(199, 199, 199);
+    --gray1 : rgb(55,55,55);
+    --gray2 : rgb(30,30,30);
+    --gray3 : rgb(25,25,25);
+    --defaultWhite: #fff;
+    --trueColor0:  rgb(99, 163, 99);
+    --trueColor1:  rgb(68, 180, 111);
+    --trueFontColor: rgb(255,255,255);
+    --falseColor0: rgb(250, 79, 79);
+    --falseColor1: palevioletred;
+    --falseFontColor: rgb(255,255,255);
+   
+}
+*{
+    
+    box-sizing: border-box;
+    outline: 0;
+    
+}
+hr {    
+    border: solid 1px var(--gray1)
+}
+body 
+{
+    margin: 0;
+    padding: 0;
+    background : var(--secondaryBgcolor);
+    font-family: "Open sans", sans-serif;
+    font-size: 1em;
+}
+h1 {
+    color: var(--defaultWhite);
+    font-weight: 700;
+}
+
+.container {
+    max-width: 525px;
+    margin: 20px auto;
+    background: var(--primaryBgcolor);
+    padding: 20px;
+    border-radius:8px;
+    
+}
+
+
+.input-new-task
+{
+    height: 30px;
+    border-radius: 2px;
+    border: none;
+    width: 376px;
+    background: var(--gray2);
+    color: var(--gray0);
+    font-size: 1em;
+    text-indent: 5px;
+    
+}
+
+.btn-add-task{
+    
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border-radius: 2px;
+    border: solid 2px var(--gray2);
+    color: var(--gray0);
+    
+}
+.task-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--gray0);
+    list-style-type: none;
+    text-indent: 5px;
+    margin-top: 10px;
+    gap: 10px;
+    padding: 5px;
+}
+
+.task-ul button {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border-radius: 2px;
+    border: solid 2px var(--gray2);
+    color: var(--gray0);
+    margin: 10px 10px 5px 0px;
+}
+
+.task-ul button:hover {   
+    border: solid 2px var(--falseColor0);;
+    color: var(--falseColor0);
+
+}
+.btn-add-task:hover {
+    border: solid 2px var(--trueColor1);;
+    color: var(--trueColor1);
+}
